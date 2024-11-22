@@ -42,7 +42,7 @@ body {
 .hero {
   width: 100%;
   min-height: 100vh;
-  background-image: url("/img/bg.png");
+  background-image: url(/img/bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -167,58 +167,6 @@ button:hover {
   border: 2px solid var(--colorprimary);
   box-sizing: border-box;
 }
-@media only screen and (max-width: 600px) {
-  .header-menu {
-    display: none;
-  }
-  .header-icon {
-    display: none;
-  }
-  .hero {
-    flex-direction: column;
-    padding: 100px 10px;
-  }
-
-  .hero-desc h1 {
-    /* color: var(--colorprimary); */
-    /* font-size: 48px;
-    color: var(--colorprimary);
-    text-transform: uppercase; */
-
-    /* font-size: 50px; */
-  }
-  .hero-img img {
-    width: 80%;
-  }
-
-  .about {
-    flex-direction: column;
-    /* padding: 50px 100px; */
-    padding: 50px 30px;
-    text-align: justify;
-  }
-
-  .product {
-    /* background-color: #8a6f4d; */
-    padding: 50px 20px; /*agar card idak mengecil */
-  }
-  .product-title {
-    font-size: small;
-  }
-
-  .customer-card {
-    background-color: var(--colorprimary);
-    width: 300px;
-  }
-  .customer-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .footer {
-    flex-direction: column;
-  }
-}
 
 .customer-title {
   text-align: center;
@@ -272,4 +220,57 @@ button:hover {
   gap: 80px;
   background-color: var(--text-color);
   color: var(--bg-color);
+}
+
+@media only screen and (max-width: 600px) {
+  .header-menu {
+    display: none;
+  }
+  .header-icon {
+    display: none;
+  }
+  .hero {
+    flex-direction: column;
+    padding: 100px 10px;
+  }
+
+  .hero-desc h1 {
+    /* color: var(--colorprimary); */
+    /* font-size: 48px;
+    color: var(--colorprimary);
+    text-transform: uppercase; */
+
+    /* font-size: 50px; */
+  }
+  .hero-img img {
+    width: 80%;
+  }
+
+  .about {
+    flex-direction: column;
+    /* padding: 50px 100px; */
+    padding: 50px 30px;
+    text-align: justify;
+  }
+
+  .product {
+    /* background-color: #8a6f4d; */
+    padding: 50px 20px; /*agar card idak mengecil */
+  }
+  .product-title {
+    font-size: small;
+  }
+
+  .customer-card {
+    background-color: var(--colorprimary);
+    width: 300px;
+  }
+  .customer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer {
+    flex-direction: column;
+  }
 }
